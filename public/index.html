@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ConflictWatch — Live Conflict Monitor</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <span class="dot"></span>
+      <h1>ConflictWatch</h1>
+      <span class="tagline">Open-source conflict monitor</span>
+    </div>
+    <div class="status">
+      <select id="lang-select" title="Language"></select>
+      <button id="live-tv-toggle" title="Watch live news streams">▶ Live TV</button>
+      <span id="source-status"></span>
+      <span id="last-updated">Loading…</span>
+    </div>
+  </header>
+
+  <main>
+    <aside id="sidebar">
+      <div class="sidebar-head">
+        <h2 id="sidebar-title">Conflicts by region</h2>
+        <p class="hint" id="sidebar-hint">Expand a region to show its pins on the map</p>
+      </div>
+      <div id="conflict-list"></div>
+      <div class="sidebar-foot">
+        <div class="legend" id="legend-main">
+          <span class="status-dot active"></span> Active conflict
+          <span class="status-dot potential"></span> Potential flashpoint
+          <span class="status-dot unrest"></span> Civil unrest
+        </div>
+        <div class="legend" id="legend-detect">
+          <span class="status-dot suggested single"></span> Detected, 1 source
+          <span class="status-dot suggested corr"></span> Detected, corroborated
+        </div>
+        <div id="corr-explain">
+          <span class="badge verified-badge">corroborated</span> = reported by 2+ independent
+          sources in the last 48&nbsp;hours
+        </div>
+        <div id="lang-caveat" class="lang-caveat"></div>
+        <details class="about-data">
+          <summary id="about-summary">About the data</summary>
+          <ul>
+            <li>News is aggregated every 5 minutes from open RSS feeds of BBC News, Al Jazeera,
+              The Guardian, UN News, Deutsche Welle, France 24 and ReliefWeb (UN OCHA).</li>
+            <li>Only items with direct security, military, diplomatic or humanitarian
+              relevance to a conflict are shown — general news that merely mentions a
+              country is filtered out.</li>
+            <li>A conflict is marked <em>corroborated</em> only when 2+ independent sources
+              report on it within 48 hours. Single-source items remain visible but unbadged.</li>
+            <li><em>Active</em>, <em>potential</em> and <em>civil unrest</em> designations are
+              editorially curated, guided by the CFR Global Conflict Tracker, Crisis Group
+              CrisisWatch and ACLED — the linked assessments are the live authority.</li>
+            <li>Linked entities are limited to what public sanctions lists (OFAC/EU/UK/UN)
+              and official government records already document. Follow the source link on
+              each entry to verify.</li>
+            <li><em>Auto-detected unrest</em> pins (dashed) are machine-suggested when
+              unrest-related reporting appears for a country without a curated entry:
+              blue = one source so far (unconfirmed), green = corroborated by 2+
+              independent sources. They are suggestions, not confirmed assessments.</li>
+            <li>Interface translations into 9 languages are human-curated; in all other
+              offered languages the interface stays in English. News articles in any
+              non-English language open via machine translation, which is imperfect —
+              the original article is always available through the source name.</li>
+            <li>Live-coverage links point to external OSINT maps and broadcaster streams;
+              their content is not verified by this app. This app is an aggregator, not a
+              substitute for official guidance.</li>
+          </ul>
+        </details>
+      </div>
+    </aside>
+    <div id="map"></div>
+
+    <div id="live-tv-panel">
+      <div class="live-tv-head">
+        <span><span class="live-dot"></span>Live news streams</span>
+        <button id="live-tv-close" title="Close">✕</button>
+      </div>
+      <div id="live-tv-tabs"></div>
+      <iframe id="live-tv-frame" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+      <div class="live-tv-foot">
+        Streams are official broadcaster channels on YouTube. If one is offline,
+        <a id="live-tv-watch" href="#" target="_blank" rel="noopener noreferrer">open it on YouTube</a>.
+      </div>
+    </div>
+  </main>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

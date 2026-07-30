@@ -1,0 +1,967 @@
+[
+  {
+    "id": "ukraine",
+    "name": "Russia–Ukraine War",
+    "country": "Ukraine",
+    "lat": 49.0,
+    "lng": 31.4,
+    "keywords": [
+      "ukraine",
+      "ukrainian",
+      "kyiv",
+      "kharkiv",
+      "donetsk",
+      "zaporizhzhia",
+      "kherson",
+      "crimea",
+      "luhansk",
+      "odesa",
+      "zelensky"
+    ],
+    "entities": [
+      {
+        "name": "Wagner Group",
+        "role": "Russian state-linked private military company that fought in Ukraine; sanctioned by the US, EU and UK.",
+        "source": {
+          "label": "OFAC sanctions search",
+          "url": "https://sanctionssearch.ofac.treas.gov/"
+        },
+        "connection": "military support"
+      },
+      {
+        "name": "Rostec",
+        "role": "Russian state-owned defence conglomerate supplying the Russian armed forces; broadly sanctioned.",
+        "source": {
+          "label": "OFAC sanctions search",
+          "url": "https://sanctionssearch.ofac.treas.gov/"
+        },
+        "connection": "weapons manufacturing",
+        "website": "https://rostec.ru/en/"
+      },
+      {
+        "name": "Lockheed Martin",
+        "role": "US manufacturer of HIMARS and other systems delivered to Ukraine under US security assistance packages.",
+        "source": {
+          "label": "US DoD — Support for Ukraine",
+          "url": "https://www.defense.gov/Spotlights/Support-for-Ukraine/"
+        },
+        "connection": "weapons deals",
+        "website": "https://www.lockheedmartin.com"
+      }
+    ],
+    "region": "Europe",
+    "status": "active",
+    "live": [
+      {
+        "label": "Liveuamap Ukraine (live OSINT map)",
+        "url": "https://liveuamap.com"
+      },
+      {
+        "label": "ISW daily campaign assessments",
+        "url": "https://www.understandingwar.org/backgrounder/ukraine-conflict-updates"
+      }
+    ]
+  },
+  {
+    "id": "israel-gaza",
+    "name": "Israel–Gaza War",
+    "country": "Palestinian Territories / Israel",
+    "lat": 31.42,
+    "lng": 34.37,
+    "keywords": [
+      "gaza",
+      "hamas",
+      "rafah",
+      "khan younis",
+      "west bank",
+      "israeli strike",
+      "israel strike",
+      "idf",
+      "netanyahu"
+    ],
+    "entities": [
+      {
+        "name": "Elbit Systems",
+        "role": "Israel's largest publicly traded defence contractor; major supplier to the Israel Defense Forces.",
+        "source": {
+          "label": "Reuters company profile",
+          "url": "https://www.reuters.com/markets/companies/ESLT.TA/"
+        },
+        "connection": "weapons & tech",
+        "website": "https://elbitsystems.com"
+      },
+      {
+        "name": "Boeing (Defense)",
+        "role": "Supplier of precision-guided munitions to Israel via US Foreign Military Sales.",
+        "source": {
+          "label": "DSCA major arms sales notices",
+          "url": "https://www.dsca.mil/press-media/major-arms-sales"
+        },
+        "connection": "weapons deals",
+        "website": "https://www.boeing.com/defense"
+      }
+    ],
+    "region": "Middle East",
+    "status": "active",
+    "live": [
+      {
+        "label": "Liveuamap Israel–Palestine (live OSINT map)",
+        "url": "https://israelpalestine.liveuamap.com"
+      },
+      {
+        "label": "Al Jazeera live TV",
+        "url": "https://www.aljazeera.com/live"
+      }
+    ]
+  },
+  {
+    "id": "lebanon",
+    "name": "Israel–Hezbollah Conflict",
+    "country": "Lebanon",
+    "lat": 33.85,
+    "lng": 35.86,
+    "keywords": [
+      "hezbollah",
+      "lebanon",
+      "lebanese",
+      "beirut",
+      "south lebanon"
+    ],
+    "region": "Middle East",
+    "status": "active",
+    "live": [
+      {
+        "label": "Liveuamap Israel–Palestine (live OSINT map)",
+        "url": "https://israelpalestine.liveuamap.com"
+      }
+    ]
+  },
+  {
+    "id": "iran-israel",
+    "name": "Iran–Israel Tensions",
+    "country": "Iran",
+    "lat": 32.4,
+    "lng": 53.7,
+    "keywords": [
+      "iran",
+      "tehran",
+      "irgc",
+      "revolutionary guard"
+    ],
+    "entities": [
+      {
+        "name": "Islamic Revolutionary Guard Corps (IRGC)",
+        "role": "Iranian military branch backing armed groups across the region; US-designated and heavily sanctioned.",
+        "source": {
+          "label": "OFAC sanctions search",
+          "url": "https://sanctionssearch.ofac.treas.gov/"
+        },
+        "connection": "military & monetary support"
+      }
+    ],
+    "region": "Middle East",
+    "status": "active",
+    "live": [
+      {
+        "label": "Al Jazeera live TV",
+        "url": "https://www.aljazeera.com/live"
+      }
+    ]
+  },
+  {
+    "id": "iraq",
+    "name": "Iraq Instability",
+    "country": "Iraq",
+    "lat": 33.2,
+    "lng": 43.7,
+    "keywords": [
+      "iraq",
+      "baghdad",
+      "islamic state",
+      "isis",
+      "mosul",
+      "kirkuk"
+    ],
+    "region": "Middle East",
+    "status": "active"
+  },
+  {
+    "id": "syria",
+    "name": "Syria Conflict",
+    "country": "Syria",
+    "lat": 35.0,
+    "lng": 38.0,
+    "keywords": [
+      "syria",
+      "syrian",
+      "damascus",
+      "idlib",
+      "aleppo",
+      "latakia"
+    ],
+    "region": "Middle East",
+    "status": "active",
+    "live": [
+      {
+        "label": "Liveuamap Syria (live OSINT map)",
+        "url": "https://syria.liveuamap.com"
+      }
+    ]
+  },
+  {
+    "id": "yemen",
+    "name": "Yemen Conflict",
+    "country": "Yemen",
+    "lat": 15.35,
+    "lng": 44.2,
+    "keywords": [
+      "yemen",
+      "houthi",
+      "sanaa",
+      "sana'a",
+      "red sea attack",
+      "aden"
+    ],
+    "entities": [
+      {
+        "name": "Sa'id al-Jamal network",
+        "role": "IRGC-Quds Force-linked oil smuggling network that funds the Houthis; OFAC-sanctioned.",
+        "source": {
+          "label": "OFAC sanctions search",
+          "url": "https://sanctionssearch.ofac.treas.gov/"
+        },
+        "connection": "monetary support"
+      }
+    ],
+    "region": "Middle East",
+    "status": "active",
+    "live": [
+      {
+        "label": "Liveuamap Yemen (live OSINT map)",
+        "url": "https://yemen.liveuamap.com"
+      }
+    ]
+  },
+  {
+    "id": "sudan",
+    "name": "Sudan Civil War",
+    "country": "Sudan",
+    "lat": 15.55,
+    "lng": 32.53,
+    "keywords": [
+      "sudan",
+      "khartoum",
+      "darfur",
+      "rsf",
+      "rapid support forces",
+      "el fasher",
+      "al-fashir",
+      "port sudan"
+    ],
+    "entities": [
+      {
+        "name": "Al Junaid Multi Activities Co",
+        "role": "Gold company controlled by RSF leadership; sanctioned by the US, EU and UK.",
+        "source": {
+          "label": "OFAC sanctions search",
+          "url": "https://sanctionssearch.ofac.treas.gov/"
+        },
+        "connection": "monetary support"
+      },
+      {
+        "name": "Meroe Gold / M Invest",
+        "role": "Wagner-linked gold mining operation in Sudan; OFAC-sanctioned.",
+        "source": {
+          "label": "OFAC sanctions search",
+          "url": "https://sanctionssearch.ofac.treas.gov/"
+        },
+        "connection": "monetary support"
+      }
+    ],
+    "region": "Africa",
+    "status": "active",
+    "live": [
+      {
+        "label": "Liveuamap Sudan (live OSINT map)",
+        "url": "https://sudan.liveuamap.com"
+      }
+    ]
+  },
+  {
+    "id": "myanmar",
+    "name": "Myanmar Civil War",
+    "country": "Myanmar",
+    "lat": 21.9,
+    "lng": 95.95,
+    "keywords": [
+      "myanmar",
+      "burma",
+      "rakhine",
+      "junta",
+      "arakan army",
+      "naypyidaw",
+      "rohingya"
+    ],
+    "entities": [
+      {
+        "name": "Myanma Economic Holdings Ltd (MEHL)",
+        "role": "Military-owned conglomerate financing the junta; sanctioned by the US, EU and UK.",
+        "source": {
+          "label": "OFAC sanctions search",
+          "url": "https://sanctionssearch.ofac.treas.gov/"
+        },
+        "connection": "monetary support"
+      },
+      {
+        "name": "Myanmar Economic Corporation (MEC)",
+        "role": "Military-controlled holding company; sanctioned by the US, EU and UK.",
+        "source": {
+          "label": "OFAC sanctions search",
+          "url": "https://sanctionssearch.ofac.treas.gov/"
+        },
+        "connection": "monetary support"
+      }
+    ],
+    "region": "Asia",
+    "status": "active"
+  },
+  {
+    "id": "sahel",
+    "name": "Sahel Insurgency",
+    "country": "Mali / Burkina Faso / Niger",
+    "lat": 16.0,
+    "lng": -1.0,
+    "keywords": [
+      "mali",
+      "burkina faso",
+      "niger ",
+      "sahel",
+      "jnim",
+      "bamako",
+      "ouagadougou",
+      "niamey"
+    ],
+    "entities": [
+      {
+        "name": "Wagner Group / Africa Corps",
+        "role": "Russian PMC deployed alongside Malian forces; abuses documented by UN experts; widely sanctioned.",
+        "source": {
+          "label": "OFAC sanctions search",
+          "url": "https://sanctionssearch.ofac.treas.gov/"
+        },
+        "connection": "military support"
+      }
+    ],
+    "region": "Africa",
+    "status": "active"
+  },
+  {
+    "id": "drc",
+    "name": "Eastern DRC Conflict (M23)",
+    "country": "Democratic Republic of the Congo",
+    "lat": -1.66,
+    "lng": 29.22,
+    "keywords": [
+      "congo",
+      "drc",
+      "m23",
+      "goma",
+      "kivu",
+      "bukavu"
+    ],
+    "entities": [
+      {
+        "name": "Conflict-mineral supply chains (coltan / gold)",
+        "role": "M23 controls coltan mining around Rubaya; trafficking networks documented by the UN Group of Experts.",
+        "source": {
+          "label": "UN Group of Experts on the DRC",
+          "url": "https://www.un.org/securitycouncil/sanctions/1533/panel-of-experts"
+        },
+        "connection": "resource funding"
+      }
+    ],
+    "region": "Africa",
+    "status": "active"
+  },
+  {
+    "id": "haiti",
+    "name": "Haiti Gang Crisis",
+    "country": "Haiti",
+    "lat": 18.54,
+    "lng": -72.34,
+    "keywords": [
+      "haiti",
+      "haitian",
+      "port-au-prince"
+    ],
+    "region": "Americas",
+    "status": "active"
+  },
+  {
+    "id": "somalia",
+    "name": "Somalia Insurgency",
+    "country": "Somalia",
+    "lat": 4.5,
+    "lng": 45.5,
+    "keywords": [
+      "somalia",
+      "somali",
+      "al-shabaab",
+      "al shabaab",
+      "mogadishu"
+    ],
+    "region": "Africa",
+    "status": "active"
+  },
+  {
+    "id": "ethiopia",
+    "name": "Ethiopia Internal Conflicts",
+    "country": "Ethiopia",
+    "lat": 9.0,
+    "lng": 38.7,
+    "keywords": [
+      "ethiopia",
+      "ethiopian",
+      "amhara",
+      "tigray",
+      "oromia",
+      "addis ababa",
+      "fano"
+    ],
+    "region": "Africa",
+    "status": "active"
+  },
+  {
+    "id": "south-sudan",
+    "name": "South Sudan Crisis",
+    "country": "South Sudan",
+    "lat": 7.86,
+    "lng": 29.69,
+    "keywords": [
+      "south sudan",
+      "juba"
+    ],
+    "region": "Africa",
+    "status": "active"
+  },
+  {
+    "id": "afghanistan",
+    "name": "Afghanistan Crisis",
+    "country": "Afghanistan",
+    "lat": 34.5,
+    "lng": 66.0,
+    "keywords": [
+      "afghanistan",
+      "afghan",
+      "taliban",
+      "kabul"
+    ],
+    "region": "Asia",
+    "status": "active"
+  },
+  {
+    "id": "colombia",
+    "name": "Colombia Armed Conflict",
+    "country": "Colombia",
+    "lat": 3.9,
+    "lng": -73.0,
+    "keywords": [
+      "colombia",
+      "colombian",
+      "eln",
+      "farc",
+      "catatumbo"
+    ],
+    "region": "Americas",
+    "status": "active"
+  },
+  {
+    "id": "taiwan-strait",
+    "name": "Taiwan Strait Tensions",
+    "country": "Taiwan",
+    "lat": 23.7,
+    "lng": 121.0,
+    "region": "Asia",
+    "status": "potential",
+    "keywords": [
+      "taiwan",
+      "taipei",
+      "taiwan strait"
+    ],
+    "assessment": {
+      "label": "CFR Global Conflict Tracker",
+      "url": "https://www.cfr.org/global-conflict-tracker"
+    },
+    "entities": [
+      {
+        "name": "TSMC",
+        "role": "World's largest contract chipmaker; Taiwan's semiconductor dominance is widely described as its strategic 'silicon shield'.",
+        "source": {
+          "label": "Reuters company profile",
+          "url": "https://www.reuters.com/markets/companies/2330.TW/"
+        },
+        "connection": "strategic tech",
+        "website": "https://www.tsmc.com"
+      }
+    ]
+  },
+  {
+    "id": "korean-peninsula",
+    "name": "Korean Peninsula Tensions",
+    "country": "North Korea / South Korea",
+    "lat": 39.5,
+    "lng": 127.2,
+    "region": "Asia",
+    "status": "potential",
+    "keywords": [
+      "north korea",
+      "pyongyang",
+      "dprk",
+      "kim jong"
+    ],
+    "assessment": {
+      "label": "CFR Global Conflict Tracker",
+      "url": "https://www.cfr.org/global-conflict-tracker"
+    },
+    "entities": [
+      {
+        "name": "Korea Mining Development Trading Corp (KOMID)",
+        "role": "North Korea's primary arms exporter; sanctioned by the UN and US.",
+        "source": {
+          "label": "OFAC sanctions search",
+          "url": "https://sanctionssearch.ofac.treas.gov/"
+        },
+        "connection": "weapons deals"
+      }
+    ]
+  },
+  {
+    "id": "kashmir",
+    "name": "India–Pakistan (Kashmir)",
+    "country": "India / Pakistan",
+    "lat": 34.1,
+    "lng": 75.8,
+    "region": "Asia",
+    "status": "potential",
+    "keywords": [
+      "kashmir",
+      "line of control",
+      "srinagar",
+      "india and pakistan"
+    ],
+    "assessment": {
+      "label": "CFR Global Conflict Tracker",
+      "url": "https://www.cfr.org/global-conflict-tracker"
+    }
+  },
+  {
+    "id": "south-china-sea",
+    "name": "South China Sea Dispute",
+    "country": "China / Philippines",
+    "lat": 15.2,
+    "lng": 117.7,
+    "region": "Asia",
+    "status": "potential",
+    "keywords": [
+      "south china sea",
+      "scarborough",
+      "spratly",
+      "philippine coast guard",
+      "second thomas shoal"
+    ],
+    "assessment": {
+      "label": "CFR Global Conflict Tracker",
+      "url": "https://www.cfr.org/global-conflict-tracker"
+    },
+    "entities": [
+      {
+        "name": "CNOOC",
+        "role": "Chinese state oil major operating in disputed waters; subject to US investment restrictions.",
+        "source": {
+          "label": "Reuters company profile",
+          "url": "https://www.reuters.com/markets/companies/0883.HK/"
+        },
+        "connection": "resource extraction",
+        "website": "https://www.cnoocltd.com"
+      }
+    ]
+  },
+  {
+    "id": "venezuela-guyana",
+    "name": "Venezuela–Guyana (Essequibo)",
+    "country": "Venezuela / Guyana",
+    "lat": 6.8,
+    "lng": -59.5,
+    "region": "Americas",
+    "status": "potential",
+    "keywords": [
+      "essequibo",
+      "guyana",
+      "venezuela"
+    ],
+    "assessment": {
+      "label": "Crisis Group CrisisWatch",
+      "url": "https://www.crisisgroup.org/crisiswatch"
+    },
+    "entities": [
+      {
+        "name": "ExxonMobil",
+        "role": "Operates the Stabroek oil block offshore the Essequibo region at the centre of the territorial dispute.",
+        "source": {
+          "label": "Reuters company profile",
+          "url": "https://www.reuters.com/markets/companies/XOM.N/"
+        },
+        "connection": "resource extraction",
+        "website": "https://corporate.exxonmobil.com"
+      }
+    ]
+  },
+  {
+    "id": "armenia-azerbaijan",
+    "name": "Armenia–Azerbaijan Tensions",
+    "country": "Armenia / Azerbaijan",
+    "lat": 40.0,
+    "lng": 46.5,
+    "region": "Europe",
+    "status": "potential",
+    "keywords": [
+      "armenia",
+      "azerbaijan",
+      "nagorno",
+      "karabakh",
+      "yerevan",
+      "baku"
+    ],
+    "assessment": {
+      "label": "Crisis Group CrisisWatch",
+      "url": "https://www.crisisgroup.org/crisiswatch"
+    }
+  },
+  {
+    "id": "nato-eastern-flank",
+    "name": "NATO Eastern Flank (Poland)",
+    "country": "Poland",
+    "lat": 51.9,
+    "lng": 19.1,
+    "region": "Europe",
+    "status": "potential",
+    "keywords": [
+      "poland",
+      "polish airspace",
+      "nato airspace",
+      "kaliningrad",
+      "baltic airspace",
+      "suwalki"
+    ],
+    "assessment": {
+      "label": "CFR Global Conflict Tracker",
+      "url": "https://www.cfr.org/global-conflict-tracker"
+    },
+    "live": [
+      {
+        "label": "Liveuamap Ukraine (live OSINT map)",
+        "url": "https://liveuamap.com"
+      },
+      {
+        "label": "Polish Armed Forces Operational Command",
+        "url": "https://x.com/DowOperSZ"
+      }
+    ]
+  },
+  {
+    "id": "india-unrest",
+    "name": "India Youth Protests",
+    "country": "India",
+    "lat": 28.61,
+    "lng": 77.21,
+    "region": "Asia",
+    "status": "unrest",
+    "keywords": [
+      "jantar mantar",
+      "wangchuk",
+      "delhi police",
+      "india protest",
+      "protests in india",
+      "indian protest",
+      "cockroach janta"
+    ],
+    "assessment": {
+      "label": "ACLED conflict & protest data",
+      "url": "https://acleddata.com"
+    }
+  },
+  {
+    "id": "maldives-unrest",
+    "name": "Maldives Anti-Government Protests",
+    "country": "Maldives",
+    "lat": 4.17,
+    "lng": 73.51,
+    "region": "Asia",
+    "status": "unrest",
+    "keywords": [
+      "maldives",
+      "maldivian",
+      "muizzu",
+      "male protest"
+    ],
+    "assessment": {
+      "label": "ACLED conflict & protest data",
+      "url": "https://acleddata.com"
+    }
+  },
+  {
+    "id": "bolivia-unrest",
+    "name": "Bolivia Protests & Blockades",
+    "country": "Bolivia",
+    "lat": -16.7,
+    "lng": -64.7,
+    "region": "Americas",
+    "status": "unrest",
+    "keywords": [
+      "bolivia",
+      "bolivian",
+      "la paz"
+    ],
+    "assessment": {
+      "label": "ACLED conflict & protest data",
+      "url": "https://acleddata.com"
+    }
+  },
+  {
+    "id": "libya",
+    "name": "Libya Divided (GNU–LNA Standoff)",
+    "country": "Libya",
+    "lat": 28.5,
+    "lng": 17.0,
+    "region": "Africa",
+    "status": "potential",
+    "keywords": [
+      "libya",
+      "libyan",
+      "tripoli",
+      "benghazi",
+      "haftar"
+    ],
+    "assessment": {
+      "label": "Crisis Group CrisisWatch",
+      "url": "https://www.crisisgroup.org/crisiswatch"
+    },
+    "live": [
+      {
+        "label": "Liveuamap Libya (live OSINT map)",
+        "url": "https://libya.liveuamap.com"
+      }
+    ],
+    "entities": [
+      {
+        "name": "Wagner Group / Africa Corps",
+        "role": "Russian forces embedded with the eastern LNA; presence documented by the UN Panel of Experts; widely sanctioned.",
+        "connection": "military support",
+        "source": {
+          "label": "UN Panel of Experts on Libya",
+          "url": "https://www.un.org/securitycouncil/sanctions/1970/panel-of-experts"
+        }
+      },
+      {
+        "name": "National Oil Corporation (NOC)",
+        "role": "Libya's state oil company — oil revenue distribution is the central economic stake between the rival governments.",
+        "connection": "resource extraction",
+        "website": "https://noc.ly",
+        "source": {
+          "label": "UN Panel of Experts on Libya",
+          "url": "https://www.un.org/securitycouncil/sanctions/1970/panel-of-experts"
+        }
+      }
+    ]
+  },
+  {
+    "id": "nigeria",
+    "name": "Nigeria Insurgencies (Boko Haram / ISWAP / Banditry)",
+    "country": "Nigeria",
+    "lat": 11.8,
+    "lng": 13.2,
+    "region": "Africa",
+    "status": "active",
+    "keywords": [
+      "nigeria",
+      "nigerian",
+      "boko haram",
+      "iswap",
+      "borno",
+      "zamfara",
+      "kaduna"
+    ],
+    "assessment": {
+      "label": "CFR Global Conflict Tracker",
+      "url": "https://www.cfr.org/global-conflict-tracker"
+    }
+  },
+  {
+    "id": "mozambique",
+    "name": "Cabo Delgado Insurgency",
+    "country": "Mozambique",
+    "lat": -12.3,
+    "lng": 39.5,
+    "region": "Africa",
+    "status": "active",
+    "keywords": [
+      "mozambique",
+      "mozambican",
+      "cabo delgado"
+    ],
+    "assessment": {
+      "label": "CFR Global Conflict Tracker",
+      "url": "https://www.cfr.org/global-conflict-tracker"
+    }
+  },
+  {
+    "id": "car",
+    "name": "Central African Republic Conflict",
+    "country": "Central African Republic",
+    "lat": 6.6,
+    "lng": 20.9,
+    "region": "Africa",
+    "status": "active",
+    "keywords": [
+      "central african republic",
+      "bangui"
+    ],
+    "assessment": {
+      "label": "CFR Global Conflict Tracker",
+      "url": "https://www.cfr.org/global-conflict-tracker"
+    }
+  },
+  {
+    "id": "cameroon",
+    "name": "Anglophone Crisis",
+    "country": "Cameroon",
+    "lat": 5.9,
+    "lng": 10.2,
+    "region": "Africa",
+    "status": "active",
+    "keywords": [
+      "cameroon",
+      "cameroonian",
+      "anglophone",
+      "ambazonia"
+    ],
+    "assessment": {
+      "label": "ACLED conflict & protest data",
+      "url": "https://acleddata.com"
+    }
+  },
+  {
+    "id": "pakistan",
+    "name": "Pakistan Insurgencies (TTP / Balochistan)",
+    "country": "Pakistan",
+    "lat": 30.8,
+    "lng": 68.5,
+    "region": "Asia",
+    "status": "active",
+    "keywords": [
+      "pakistan",
+      "pakistani",
+      "balochistan",
+      "tehreek-e-taliban",
+      "ttp",
+      "khyber"
+    ],
+    "assessment": {
+      "label": "CFR Global Conflict Tracker",
+      "url": "https://www.cfr.org/global-conflict-tracker"
+    }
+  },
+  {
+    "id": "turkey-pkk",
+    "name": "Turkey–PKK Conflict",
+    "country": "Turkey / Northern Iraq",
+    "lat": 37.3,
+    "lng": 42.8,
+    "region": "Middle East",
+    "status": "potential",
+    "keywords": [
+      "pkk",
+      "kurdistan workers",
+      "kurdish militant"
+    ],
+    "assessment": {
+      "label": "CFR Global Conflict Tracker",
+      "url": "https://www.cfr.org/global-conflict-tracker"
+    }
+  },
+  {
+    "id": "mexico",
+    "name": "Mexico Cartel Violence",
+    "country": "Mexico",
+    "lat": 24.0,
+    "lng": -102.5,
+    "region": "Americas",
+    "status": "active",
+    "keywords": [
+      "cartel",
+      "sinaloa",
+      "jalisco",
+      "mexico",
+      "mexican"
+    ],
+    "assessment": {
+      "label": "ACLED conflict & protest data",
+      "url": "https://acleddata.com"
+    }
+  },
+  {
+    "id": "ecuador",
+    "name": "Ecuador Gang Conflict",
+    "country": "Ecuador",
+    "lat": -2.0,
+    "lng": -78.5,
+    "region": "Americas",
+    "status": "active",
+    "keywords": [
+      "ecuador",
+      "ecuadorian",
+      "guayaquil"
+    ],
+    "assessment": {
+      "label": "ACLED conflict & protest data",
+      "url": "https://acleddata.com"
+    }
+  },
+  {
+    "id": "thailand-south",
+    "name": "Southern Thailand Insurgency",
+    "country": "Southern Thailand",
+    "lat": 6.6,
+    "lng": 101.5,
+    "region": "Asia",
+    "status": "active",
+    "keywords": [
+      "southern thailand",
+      "pattani",
+      "narathiwat",
+      "yala"
+    ],
+    "assessment": {
+      "label": "ACLED conflict & protest data",
+      "url": "https://acleddata.com"
+    }
+  },
+  {
+    "id": "west-papua",
+    "name": "West Papua Conflict",
+    "country": "Indonesia (West Papua)",
+    "lat": -4.3,
+    "lng": 138.5,
+    "region": "Asia",
+    "status": "active",
+    "keywords": [
+      "west papua",
+      "papuan",
+      "papua province"
+    ],
+    "assessment": {
+      "label": "ACLED conflict & protest data",
+      "url": "https://acleddata.com"
+    }
+  }
+]
