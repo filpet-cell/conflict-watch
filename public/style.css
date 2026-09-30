@@ -414,8 +414,69 @@ main { flex: 1; display: flex; min-height: 0; position: relative; }
   padding-top: 7px;
 }
 
+/* Menu button (mobile only) */
+#menu-toggle {
+  display: none;
+  background: var(--panel-2);
+  border: 1px solid var(--border);
+  color: var(--text);
+  border-radius: 6px;
+  padding: 4px 10px;
+  font-size: 15px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+#menu-toggle.on { border-color: var(--accent); color: var(--accent); }
+
+/* Phone layout: fullscreen map, sidebar becomes a slide-out drawer */
 @media (max-width: 760px) {
-  main { flex-direction: column; }
-  #sidebar { width: 100%; max-height: 45%; border-right: none; border-bottom: 1px solid var(--border); }
-  .sidebar-foot { display: none; }
+  #menu-toggle { display: block; }
+  .brand { gap: 8px; }
+  .brand h1 { font-size: 16px; }
+  .brand .tagline { display: none; }
+  #source-status { display: none; }
+  header { padding: 8px 10px; }
+  .status { gap: 8px; }
+  #last-updated { display: none; }
+  #lang-select { max-width: 92px; padding: 4px 5px; }
+  #live-tv-toggle { padding: 4px 8px; font-size: 11px; }
+
+  #sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: min(85vw, 340px);
+    z-index: 1200;
+    border-right: 1px solid var(--border);
+    box-shadow: 8px 0 30px rgba(0, 0, 0, 0.55);
+    transform: translateX(-105%);
+    transition: transform 0.25s ease;
+  }
+  #sidebar.open { transform: translateX(0); }
+  html[dir="rtl"] #sidebar {
+    left: auto;
+    right: 0;
+    border-right: none;
+    border-left: 1px solid var(--border);
+    transform: translateX(105%);
+    box-shadow: -8px 0 30px rgba(0, 0, 0, 0.55);
+  }
+  html[dir="rtl"] #sidebar.open { transform: translateX(0); }
+
+  /* Larger touch targets in the drawer */
+  .region-group summary { padding: 14px 16px; }
+  .region-group li { padding: 12px 16px 12px 22px; }
+
+  /* Popups sized to the phone screen */
+  .leaflet-popup-content { width: 76vw !important; }
+  .popup-links ul { max-height: 38vh; }
+
+  /* Live TV panel spans the bottom of the screen */
+  #live-tv-panel {
+    left: 8px;
+    right: 8px;
+    bottom: 8px;
+    width: auto;
+  }
 }

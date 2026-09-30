@@ -291,12 +291,15 @@ const map = L.map("map", {
   maxBounds: [[-75, -200], [85, 200]],
 }).setView([22, 15], 2);
 
-L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png", {
-  attribution:
-    '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
-  subdomains: "abcd",
-  maxZoom: 19,
-}).addTo(map);
+// Esri dark canvas (no API key required); labels come from its reference layer
+L.tileLayer(
+  "https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}",
+  { attribution: "Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ", maxZoom: 16 }
+).addTo(map);
+L.tileLayer(
+  "https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Reference/MapServer/tile/{z}/{y}/{x}",
+  { maxZoom: 16 }
+).addTo(map);
 
 // Nearby pins collapse into a neutral cluster bubble at world zoom and split
 // apart once zoomed in past level 5.
@@ -323,6 +326,25 @@ function focusMarker(m) {
   if (!clusterGroup.hasLayer(m)) clusterGroup.addLayer(m);
   clusterGroup.zoomToShowLayer(m, () => m.openPopup());
 }
+
+// Phone layout: the sidebar is a slide-out drawer toggled from the header
+const sidebarEl = document.getElementById("sidebar");
+const menuToggle = document.getElementById("menu-toggle");
+const isMobile = () => window.matchMedia("(max-width: 760px)").matches;
+
+menuToggle.addEventListener("click", () => {
+  const open = sidebarEl.classList.toggle("open");
+  menuToggle.classList.toggle("on", open);
+});
+
+function closeSidebarOnMobile() {
+  if (isMobile()) {
+    sidebarEl.classList.remove("open");
+    menuToggle.classList.remove("on");
+  }
+}
+
+map.on("click", closeSidebarOnMobile);
 
 const markers = new Map(); // conflict id -> Leaflet marker
 const suggestionMarkers = new Map(); // country name -> Leaflet marker
@@ -521,6 +543,7 @@ function render(data) {
           </span>
         </div>`;
       li.addEventListener("click", () => {
+        closeSidebarOnMobile();
         const m = markers.get(c.id);
         if (m) focusMarker(m);
       });
@@ -643,6 +666,7 @@ function renderSuggestions(suggestions, listEl) {
         <span class="badge ${s.corroborated ? "corr-badge" : "single-badge"}">${s.recentCount}</span>
       </div>`;
     li.addEventListener("click", () => {
+      closeSidebarOnMobile();
       const m = suggestionMarkers.get(s.country);
       if (m) focusMarker(m);
     });
