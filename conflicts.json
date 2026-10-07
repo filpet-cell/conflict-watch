@@ -227,6 +227,17 @@
         "label": "Al Jazeera live TV",
         "url": "https://www.aljazeera.com/live"
       }
+    ],
+    "finance": [
+      {
+        "name": "Sanctioned oil exports financing the IRGC",
+        "connection": "resource funding",
+        "role": "Shadow-fleet oil sales funding IRGC regional activities, documented in successive US Treasury designations.",
+        "source": {
+          "label": "OFAC sanctions search",
+          "url": "https://sanctionssearch.ofac.treas.gov/"
+        }
+      }
     ]
   },
   {
@@ -244,7 +255,27 @@
       "kirkuk"
     ],
     "region": "Middle East",
-    "status": "active"
+    "status": "active",
+    "finance": [
+      {
+        "name": "Iran-aligned militia financing",
+        "connection": "military & monetary support",
+        "role": "IRGC-Quds Force funding and smuggling channels to Iraqi militias, documented in US Treasury designations.",
+        "source": {
+          "label": "OFAC sanctions search",
+          "url": "https://sanctionssearch.ofac.treas.gov/"
+        }
+      },
+      {
+        "name": "ISIS residual financing",
+        "connection": "monetary support",
+        "role": "Extortion, kidnap-for-ransom and smuggling cells documented by the UN's ISIL & Al-Qaida monitoring team.",
+        "source": {
+          "label": "UN ISIL/Al-Qaida Monitoring Team",
+          "url": "https://www.un.org/securitycouncil/sanctions/1267/monitoring-team"
+        }
+      }
+    ]
   },
   {
     "id": "syria",
@@ -266,6 +297,26 @@
       {
         "label": "Liveuamap Syria (live OSINT map)",
         "url": "https://syria.liveuamap.com"
+      }
+    ],
+    "finance": [
+      {
+        "name": "Captagon trade networks",
+        "connection": "monetary support",
+        "role": "Industrial-scale amphetamine trafficking became a major conflict-financing stream; networks sanctioned by the US, UK and EU.",
+        "source": {
+          "label": "OFAC sanctions search",
+          "url": "https://sanctionssearch.ofac.treas.gov/"
+        }
+      },
+      {
+        "name": "Humanitarian & reconstruction funding",
+        "connection": "humanitarian funding",
+        "role": "Donor flows into the Syria response, tracked openly by UN OCHA's Financial Tracking Service.",
+        "source": {
+          "label": "UN OCHA Financial Tracking Service",
+          "url": "https://fts.unocha.org"
+        }
       }
     ]
   },
@@ -547,7 +598,18 @@
       "mogadishu"
     ],
     "region": "Africa",
-    "status": "active"
+    "status": "active",
+    "finance": [
+      {
+        "name": "Al-Shabaab taxation & extortion",
+        "connection": "monetary support",
+        "role": "Checkpoint taxation, business extortion and port fees documented by UN sanctions monitors.",
+        "source": {
+          "label": "UN Somalia sanctions committee",
+          "url": "https://www.un.org/securitycouncil/sanctions/751"
+        }
+      }
+    ]
   },
   {
     "id": "ethiopia",
@@ -565,7 +627,18 @@
       "fano"
     ],
     "region": "Africa",
-    "status": "active"
+    "status": "active",
+    "finance": [
+      {
+        "name": "Humanitarian response funding",
+        "connection": "humanitarian funding",
+        "role": "Donor funding for conflict-affected regions, tracked openly by UN OCHA's Financial Tracking Service.",
+        "source": {
+          "label": "UN OCHA Financial Tracking Service",
+          "url": "https://fts.unocha.org"
+        }
+      }
+    ]
   },
   {
     "id": "south-sudan",
@@ -578,7 +651,18 @@
       "juba"
     ],
     "region": "Africa",
-    "status": "active"
+    "status": "active",
+    "finance": [
+      {
+        "name": "Oil revenue & elite capture",
+        "connection": "resource funding",
+        "role": "Oil money diverted through elite networks, extensively documented by The Sentry's investigations.",
+        "source": {
+          "label": "The Sentry — conflict finance investigations",
+          "url": "https://thesentry.org"
+        }
+      }
+    ]
   },
   {
     "id": "afghanistan",
@@ -593,7 +677,27 @@
       "kabul"
     ],
     "region": "Asia",
-    "status": "active"
+    "status": "active",
+    "finance": [
+      {
+        "name": "Taliban revenue: customs, taxation & narcotics legacy",
+        "connection": "monetary support",
+        "role": "Border customs, ubiquitous taxation and residual drug-economy revenue documented by UN sanctions monitors.",
+        "source": {
+          "label": "UN Taliban sanctions committee",
+          "url": "https://www.un.org/securitycouncil/sanctions/1988"
+        }
+      },
+      {
+        "name": "Humanitarian aid flows",
+        "connection": "humanitarian funding",
+        "role": "Aid remains Afghanistan's main external inflow since central-bank reserves were frozen; tracked by UN OCHA FTS.",
+        "source": {
+          "label": "UN OCHA Financial Tracking Service",
+          "url": "https://fts.unocha.org"
+        }
+      }
+    ]
   },
   {
     "id": "colombia",
@@ -609,7 +713,18 @@
       "catatumbo"
     ],
     "region": "Americas",
-    "status": "active"
+    "status": "active",
+    "finance": [
+      {
+        "name": "Cocaine economy & illegal gold",
+        "connection": "resource funding",
+        "role": "ELN and FARC-dissident factions are financed by the narco economy and illegal gold mining, documented by UNODC.",
+        "source": {
+          "label": "UNODC",
+          "url": "https://www.unodc.org"
+        }
+      }
+    ]
   },
   {
     "id": "taiwan-strait",
@@ -638,6 +753,17 @@
         },
         "connection": "strategic tech",
         "website": "https://www.tsmc.com"
+      }
+    ],
+    "finance": [
+      {
+        "name": "US arms sales to Taiwan",
+        "connection": "weapons deals",
+        "role": "Recurring defensive arms packages notified publicly through the US DSCA.",
+        "source": {
+          "label": "DSCA major arms sales notices",
+          "url": "https://www.dsca.mil/press-media/major-arms-sales"
+        }
       }
     ]
   },
@@ -669,6 +795,17 @@
         },
         "connection": "weapons deals"
       }
+    ],
+    "finance": [
+      {
+        "name": "North Korean sanctions-evasion revenue",
+        "connection": "monetary support",
+        "role": "Cryptocurrency theft, arms exports and overseas labor financing the weapons programme, per UN sanctions monitoring.",
+        "source": {
+          "label": "UN DPRK sanctions committee",
+          "url": "https://www.un.org/securitycouncil/sanctions/1718"
+        }
+      }
     ]
   },
   {
@@ -688,7 +825,18 @@
     "assessment": {
       "label": "CFR Global Conflict Tracker",
       "url": "https://www.cfr.org/global-conflict-tracker"
-    }
+    },
+    "finance": [
+      {
+        "name": "Militant financing channels",
+        "connection": "monetary support",
+        "role": "Cross-border militant funding channels long documented in FATF monitoring of the region.",
+        "source": {
+          "label": "FATF",
+          "url": "https://www.fatf-gafi.org"
+        }
+      }
+    ]
   },
   {
     "id": "south-china-sea",
@@ -720,6 +868,17 @@
         "connection": "resource extraction",
         "website": "https://www.cnoocltd.com"
       }
+    ],
+    "finance": [
+      {
+        "name": "US security assistance to the Philippines",
+        "connection": "military & monetary support",
+        "role": "Expanding US foreign military financing and basing investment under the EDCA framework, notified via DSCA.",
+        "source": {
+          "label": "DSCA major arms sales notices",
+          "url": "https://www.dsca.mil/press-media/major-arms-sales"
+        }
+      }
     ]
   },
   {
@@ -750,6 +909,17 @@
         "connection": "resource extraction",
         "website": "https://corporate.exxonmobil.com"
       }
+    ],
+    "finance": [
+      {
+        "name": "Stabroek block oil revenue",
+        "connection": "resource extraction",
+        "role": "Offshore oil wealth transformed Guyana's economy and raised the stakes of the Essequibo claim.",
+        "source": {
+          "label": "CFR Global Conflict Tracker",
+          "url": "https://www.cfr.org/global-conflict-tracker"
+        }
+      }
     ]
   },
   {
@@ -771,7 +941,18 @@
     "assessment": {
       "label": "Crisis Group CrisisWatch",
       "url": "https://www.crisisgroup.org/crisiswatch"
-    }
+    },
+    "finance": [
+      {
+        "name": "Azerbaijani oil & gas revenue",
+        "connection": "resource funding",
+        "role": "Hydrocarbon exports financed a decade-long military buildup, visible in SIPRI military-expenditure data.",
+        "source": {
+          "label": "SIPRI",
+          "url": "https://www.sipri.org"
+        }
+      }
+    ]
   },
   {
     "id": "nato-eastern-flank",
@@ -801,6 +982,17 @@
       {
         "label": "Polish Armed Forces Operational Command",
         "url": "https://x.com/DowOperSZ"
+      }
+    ],
+    "finance": [
+      {
+        "name": "European defence-spending surge",
+        "connection": "military & monetary support",
+        "role": "Poland and NATO's eastern members lead the alliance's rearmament, with Poland near 4% of GDP on defence.",
+        "source": {
+          "label": "NATO",
+          "url": "https://www.nato.int"
+        }
       }
     ]
   },
@@ -908,6 +1100,17 @@
           "url": "https://www.un.org/securitycouncil/sanctions/1970/panel-of-experts"
         }
       }
+    ],
+    "finance": [
+      {
+        "name": "Oil revenue & fuel-smuggling disputes",
+        "connection": "resource funding",
+        "role": "Contested distribution of NOC oil revenue and documented fuel-smuggling networks underpin the rival administrations.",
+        "source": {
+          "label": "UN Panel of Experts on Libya",
+          "url": "https://www.un.org/securitycouncil/sanctions/1970/panel-of-experts"
+        }
+      }
     ]
   },
   {
@@ -930,7 +1133,18 @@
     "assessment": {
       "label": "CFR Global Conflict Tracker",
       "url": "https://www.cfr.org/global-conflict-tracker"
-    }
+    },
+    "finance": [
+      {
+        "name": "Insurgent taxation, ransom & smuggling economies",
+        "connection": "monetary support",
+        "role": "ISWAP taxation around Lake Chad and mass kidnap-for-ransom banditry, documented by UN monitors and GI-TOC.",
+        "source": {
+          "label": "GI-TOC — organized crime observatory",
+          "url": "https://globalinitiative.net"
+        }
+      }
+    ]
   },
   {
     "id": "mozambique",
@@ -948,7 +1162,28 @@
     "assessment": {
       "label": "CFR Global Conflict Tracker",
       "url": "https://www.cfr.org/global-conflict-tracker"
-    }
+    },
+    "finance": [
+      {
+        "name": "Illicit-trade financing of the insurgency",
+        "connection": "monetary support",
+        "role": "Smuggling economies in Cabo Delgado feeding the insurgency, documented by GI-TOC research.",
+        "source": {
+          "label": "GI-TOC — organized crime observatory",
+          "url": "https://globalinitiative.net"
+        }
+      },
+      {
+        "name": "Mozambique LNG (TotalEnergies-led)",
+        "connection": "resource extraction",
+        "role": "The ~$20bn gas project at the heart of the insurgency-hit region; its security defines much of the conflict's stakes.",
+        "website": "https://totalenergies.com",
+        "source": {
+          "label": "Reuters company profile",
+          "url": "https://www.reuters.com/markets/companies/TTEF.PA/"
+        }
+      }
+    ]
   },
   {
     "id": "car",
@@ -965,7 +1200,18 @@
     "assessment": {
       "label": "CFR Global Conflict Tracker",
       "url": "https://www.cfr.org/global-conflict-tracker"
-    }
+    },
+    "finance": [
+      {
+        "name": "Gold & diamond concessions to Wagner-linked firms",
+        "connection": "resource funding",
+        "role": "Mining operations granted in exchange for security services, documented by The Sentry and EU sanctions listings.",
+        "source": {
+          "label": "The Sentry — conflict finance investigations",
+          "url": "https://thesentry.org"
+        }
+      }
+    ]
   },
   {
     "id": "cameroon",
@@ -984,7 +1230,18 @@
     "assessment": {
       "label": "ACLED conflict & protest data",
       "url": "https://acleddata.com"
-    }
+    },
+    "finance": [
+      {
+        "name": "Separatist diaspora fundraising",
+        "connection": "monetary support",
+        "role": "Anglophone separatist financing via diaspora networks, documented by Crisis Group and US court cases.",
+        "source": {
+          "label": "Crisis Group",
+          "url": "https://www.crisisgroup.org"
+        }
+      }
+    ]
   },
   {
     "id": "pakistan",
@@ -1005,7 +1262,18 @@
     "assessment": {
       "label": "CFR Global Conflict Tracker",
       "url": "https://www.cfr.org/global-conflict-tracker"
-    }
+    },
+    "finance": [
+      {
+        "name": "TTP financing: extortion & smuggling",
+        "connection": "monetary support",
+        "role": "Extortion of businesses and cross-border smuggling documented by UN sanctions monitors.",
+        "source": {
+          "label": "UN ISIL/Al-Qaida Monitoring Team",
+          "url": "https://www.un.org/securitycouncil/sanctions/1267/monitoring-team"
+        }
+      }
+    ]
   },
   {
     "id": "turkey-pkk",
@@ -1023,7 +1291,18 @@
     "assessment": {
       "label": "CFR Global Conflict Tracker",
       "url": "https://www.cfr.org/global-conflict-tracker"
-    }
+    },
+    "finance": [
+      {
+        "name": "PKK financing in Europe",
+        "connection": "monetary support",
+        "role": "Extortion, donations campaigns and trafficking in Europe documented by Europol assessments.",
+        "source": {
+          "label": "Europol",
+          "url": "https://www.europol.europa.eu"
+        }
+      }
+    ]
   },
   {
     "id": "mexico",
@@ -1043,7 +1322,27 @@
     "assessment": {
       "label": "ACLED conflict & protest data",
       "url": "https://acleddata.com"
-    }
+    },
+    "finance": [
+      {
+        "name": "Cartel drug revenue",
+        "connection": "monetary support",
+        "role": "Multibillion-dollar trafficking revenue underpinning cartel power, assessed annually by the DEA.",
+        "source": {
+          "label": "DEA drug threat assessments",
+          "url": "https://www.dea.gov"
+        }
+      },
+      {
+        "name": "Southbound US firearms trafficking",
+        "connection": "weapons deals",
+        "role": "The majority of crime guns recovered in Mexico trace to US purchases; documented by GAO and ATF.",
+        "source": {
+          "label": "US GAO reports",
+          "url": "https://www.gao.gov"
+        }
+      }
+    ]
   },
   {
     "id": "ecuador",
@@ -1061,7 +1360,18 @@
     "assessment": {
       "label": "ACLED conflict & protest data",
       "url": "https://acleddata.com"
-    }
+    },
+    "finance": [
+      {
+        "name": "Cocaine transit economy",
+        "connection": "monetary support",
+        "role": "Gangs financed as transit partners of Mexican and Balkan trafficking networks, documented by UNODC.",
+        "source": {
+          "label": "UNODC",
+          "url": "https://www.unodc.org"
+        }
+      }
+    ]
   },
   {
     "id": "thailand-south",
@@ -1098,6 +1408,18 @@
     "assessment": {
       "label": "ACLED conflict & protest data",
       "url": "https://acleddata.com"
-    }
+    },
+    "finance": [
+      {
+        "name": "Freeport-McMoRan (Grasberg mine)",
+        "connection": "resource extraction",
+        "role": "One of the world's largest gold-copper mines sits in the conflict region; resource revenues are central to the dispute.",
+        "website": "https://fcx.com",
+        "source": {
+          "label": "Reuters company profile",
+          "url": "https://www.reuters.com/markets/companies/FCX.N/"
+        }
+      }
+    ]
   }
 ]
