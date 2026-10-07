@@ -1,5 +1,7 @@
 # ConflictWatch
 
+**Live at [conflictwatch.news](https://conflictwatch.news)**
+
 An open-source, round-the-clock conflict monitor. A world map shows curated pins for
 active conflicts (dark red), potential flashpoints (orange), and civil unrest (yellow),
 grouped by region in a sidebar. Every pin aggregates live news from credible open
@@ -56,6 +58,11 @@ Railway/Fly.io, equivalent workflow):
 4. Every subsequent `git push` deploys the update automatically — this is how you
    edit or add features after going live. Roll back to any previous commit if a
    deploy misbehaves.
+
+**Current deployment:** https://conflictwatch.news (domain registered at Namecheap;
+DNS: `A @ → 216.24.57.1`, `CNAME www → conflict-watch.onrender.com`; the
+`conflict-watch.onrender.com` address also still works). Render issues and renews
+the TLS certificate automatically.
 
 ## Updating after launch
 
