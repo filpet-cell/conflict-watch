@@ -31,6 +31,7 @@ const I18N = {
     detected1: "Detected, 1 source", detectedCorr: "Detected, corroborated",
     corrExplain: "= reported by 2+ independent sources in the last 48 hours", about: "About the data",
     langCaveat: "Curated names and descriptions are written in English. In other languages, articles open machine-translated (imperfect) — the original is always one click away via the source name.",
+    moneyTrail: "Money trail & financial backers",
     regions: {}, tags: {},
   },
   es: {
@@ -55,8 +56,9 @@ const I18N = {
     detected1: "Detectado, 1 fuente", detectedCorr: "Detectado, corroborado",
     corrExplain: "= informado por 2+ fuentes independientes en las últimas 48 horas", about: "Acerca de los datos",
     langCaveat: "Los nombres y descripciones curados están en inglés. Los artículos se abren con traducción automática (imperfecta) — el original está siempre a un clic mediante el nombre de la fuente.",
+    moneyTrail: "Rastro del dinero y financiadores",
     regions: { "Middle East": "Oriente Medio", "Europe": "Europa", "Africa": "África", "Asia": "Asia", "Americas": "América" },
-    tags: { "monetary support": "apoyo financiero", "weapons deals": "venta de armas", "weapons manufacturing": "fabricación de armas", "weapons & tech": "armas y tecnología", "military support": "apoyo militar", "military & monetary support": "apoyo militar y financiero", "strategic tech": "tecnología estratégica", "resource extraction": "extracción de recursos", "resource funding": "financiación por recursos" },
+    tags: { "humanitarian funding": "financiación humanitaria", "monetary support": "apoyo financiero", "weapons deals": "venta de armas", "weapons manufacturing": "fabricación de armas", "weapons & tech": "armas y tecnología", "military support": "apoyo militar", "military & monetary support": "apoyo militar y financiero", "strategic tech": "tecnología estratégica", "resource extraction": "extracción de recursos", "resource funding": "financiación por recursos" },
   },
   fr: {
     tagline: "Moniteur de conflits open source", hint: "Développez une région pour afficher ses repères sur la carte",
@@ -80,8 +82,9 @@ const I18N = {
     detected1: "Détecté, 1 source", detectedCorr: "Détecté, corroboré",
     corrExplain: "= rapporté par 2+ sources indépendantes au cours des dernières 48 heures", about: "À propos des données",
     langCaveat: "Les noms et descriptions édités sont en anglais. Les articles s'ouvrent en traduction automatique (imparfaite) — l'original reste à un clic via le nom de la source.",
+    moneyTrail: "Trace de l’argent et soutiens financiers",
     regions: { "Middle East": "Moyen-Orient", "Europe": "Europe", "Africa": "Afrique", "Asia": "Asie", "Americas": "Amériques" },
-    tags: { "monetary support": "soutien financier", "weapons deals": "ventes d'armes", "weapons manufacturing": "fabrication d'armes", "weapons & tech": "armes et technologie", "military support": "soutien militaire", "military & monetary support": "soutien militaire et financier", "strategic tech": "technologie stratégique", "resource extraction": "extraction de ressources", "resource funding": "financement par les ressources" },
+    tags: { "humanitarian funding": "financement humanitaire", "monetary support": "soutien financier", "weapons deals": "ventes d'armes", "weapons manufacturing": "fabrication d'armes", "weapons & tech": "armes et technologie", "military support": "soutien militaire", "military & monetary support": "soutien militaire et financier", "strategic tech": "technologie stratégique", "resource extraction": "extraction de ressources", "resource funding": "financement par les ressources" },
   },
   pt: {
     tagline: "Monitor de conflitos de código aberto", hint: "Expanda uma região para mostrar os seus marcadores no mapa",
@@ -105,8 +108,9 @@ const I18N = {
     detected1: "Detetado, 1 fonte", detectedCorr: "Detetado, corroborado",
     corrExplain: "= reportado por 2+ fontes independentes nas últimas 48 horas", about: "Sobre os dados",
     langCaveat: "Os nomes e descrições curados estão em inglês. Os artigos abrem com tradução automática (imperfeita) — o original está sempre a um clique através do nome da fonte.",
+    moneyTrail: "Rasto do dinheiro e financiadores",
     regions: { "Middle East": "Médio Oriente", "Europe": "Europa", "Africa": "África", "Asia": "Ásia", "Americas": "Américas" },
-    tags: { "monetary support": "apoio financeiro", "weapons deals": "negócios de armas", "weapons manufacturing": "fabrico de armas", "weapons & tech": "armas e tecnologia", "military support": "apoio militar", "military & monetary support": "apoio militar e financeiro", "strategic tech": "tecnologia estratégica", "resource extraction": "extração de recursos", "resource funding": "financiamento por recursos" },
+    tags: { "humanitarian funding": "financiamento humanitário", "monetary support": "apoio financeiro", "weapons deals": "negócios de armas", "weapons manufacturing": "fabrico de armas", "weapons & tech": "armas e tecnologia", "military support": "apoio militar", "military & monetary support": "apoio militar e financeiro", "strategic tech": "tecnologia estratégica", "resource extraction": "extração de recursos", "resource funding": "financiamento por recursos" },
   },
   de: {
     tagline: "Open-Source-Konfliktmonitor", hint: "Region aufklappen, um ihre Markierungen auf der Karte anzuzeigen",
@@ -130,8 +134,9 @@ const I18N = {
     detected1: "Erkannt, 1 Quelle", detectedCorr: "Erkannt, bestätigt",
     corrExplain: "= von 2+ unabhängigen Quellen in den letzten 48 Stunden berichtet", about: "Über die Daten",
     langCaveat: "Kuratierte Namen und Beschreibungen sind auf Englisch. Artikel öffnen sich maschinell übersetzt (nicht perfekt) — das Original ist über den Quellennamen einen Klick entfernt.",
+    moneyTrail: "Geldspur & Geldgeber",
     regions: { "Middle East": "Naher Osten", "Europe": "Europa", "Africa": "Afrika", "Asia": "Asien", "Americas": "Amerika" },
-    tags: { "monetary support": "finanzielle Unterstützung", "weapons deals": "Waffengeschäfte", "weapons manufacturing": "Waffenproduktion", "weapons & tech": "Waffen & Technologie", "military support": "militärische Unterstützung", "military & monetary support": "militärische & finanzielle Unterstützung", "strategic tech": "strategische Technologie", "resource extraction": "Rohstoffförderung", "resource funding": "Rohstofffinanzierung" },
+    tags: { "humanitarian funding": "humanitäre Finanzierung", "monetary support": "finanzielle Unterstützung", "weapons deals": "Waffengeschäfte", "weapons manufacturing": "Waffenproduktion", "weapons & tech": "Waffen & Technologie", "military support": "militärische Unterstützung", "military & monetary support": "militärische & finanzielle Unterstützung", "strategic tech": "strategische Technologie", "resource extraction": "Rohstoffförderung", "resource funding": "Rohstofffinanzierung" },
   },
   ar: {
     tagline: "مرصد مفتوح المصدر للنزاعات", hint: "وسّع منطقة لعرض مواقعها على الخريطة",
@@ -155,8 +160,9 @@ const I18N = {
     detected1: "مكتشف، مصدر واحد", detectedCorr: "مكتشف، مؤكد",
     corrExplain: "= أورده مصدران مستقلان أو أكثر خلال آخر 48 ساعة", about: "حول البيانات",
     langCaveat: "الأسماء والأوصاف المنسّقة بالإنجليزية. تُفتح المقالات بترجمة آلية (غير كاملة) — والنص الأصلي على بُعد نقرة عبر اسم المصدر.",
+    moneyTrail: "مسار المال والجهات الممولة",
     regions: { "Middle East": "الشرق الأوسط", "Europe": "أوروبا", "Africa": "أفريقيا", "Asia": "آسيا", "Americas": "الأمريكتان" },
-    tags: { "monetary support": "دعم مالي", "weapons deals": "صفقات أسلحة", "weapons manufacturing": "تصنيع أسلحة", "weapons & tech": "أسلحة وتقنية", "military support": "دعم عسكري", "military & monetary support": "دعم عسكري ومالي", "strategic tech": "تقنية استراتيجية", "resource extraction": "استخراج موارد", "resource funding": "تمويل من الموارد" },
+    tags: { "humanitarian funding": "تمويل إنساني", "monetary support": "دعم مالي", "weapons deals": "صفقات أسلحة", "weapons manufacturing": "تصنيع أسلحة", "weapons & tech": "أسلحة وتقنية", "military support": "دعم عسكري", "military & monetary support": "دعم عسكري ومالي", "strategic tech": "تقنية استراتيجية", "resource extraction": "استخراج موارد", "resource funding": "تمويل من الموارد" },
   },
   ja: {
     tagline: "オープンソース紛争モニター", hint: "地域を展開すると地図上にピンが表示されます",
@@ -180,8 +186,9 @@ const I18N = {
     detected1: "検出、1ソース", detectedCorr: "検出、確認済み",
     corrExplain: "= 過去48時間に2つ以上の独立ソースが報道", about: "データについて",
     langCaveat: "編集された名称・説明は英語です。記事は機械翻訳（不完全）で開きます — 原文はソース名からワンクリックで確認できます。",
+    moneyTrail: "資金の流れと資金提供者",
     regions: { "Middle East": "中東", "Europe": "ヨーロッパ", "Africa": "アフリカ", "Asia": "アジア", "Americas": "南北アメリカ" },
-    tags: { "monetary support": "資金支援", "weapons deals": "武器取引", "weapons manufacturing": "武器製造", "weapons & tech": "武器・技術", "military support": "軍事支援", "military & monetary support": "軍事・資金支援", "strategic tech": "戦略技術", "resource extraction": "資源採掘", "resource funding": "資源による資金調達" },
+    tags: { "humanitarian funding": "人道支援資金", "monetary support": "資金支援", "weapons deals": "武器取引", "weapons manufacturing": "武器製造", "weapons & tech": "武器・技術", "military support": "軍事支援", "military & monetary support": "軍事・資金支援", "strategic tech": "戦略技術", "resource extraction": "資源採掘", "resource funding": "資源による資金調達" },
   },
   ko: {
     tagline: "오픈소스 분쟁 모니터", hint: "지역을 펼치면 지도에 핀이 표시됩니다",
@@ -205,8 +212,9 @@ const I18N = {
     detected1: "감지됨, 1개 소스", detectedCorr: "감지됨, 확인됨",
     corrExplain: "= 지난 48시간 동안 2개 이상의 독립 소스가 보도", about: "데이터 정보",
     langCaveat: "큐레이션된 이름과 설명은 영어로 작성됩니다. 기사는 기계 번역(불완전)으로 열리며 — 원문은 소스 이름을 통해 클릭 한 번이면 볼 수 있습니다.",
+    moneyTrail: "자금 흐름 및 재정 후원자",
     regions: { "Middle East": "중동", "Europe": "유럽", "Africa": "아프리카", "Asia": "아시아", "Americas": "아메리카" },
-    tags: { "monetary support": "자금 지원", "weapons deals": "무기 거래", "weapons manufacturing": "무기 제조", "weapons & tech": "무기·기술", "military support": "군사 지원", "military & monetary support": "군사·자금 지원", "strategic tech": "전략 기술", "resource extraction": "자원 채굴", "resource funding": "자원 기반 자금" },
+    tags: { "humanitarian funding": "인도적 지원 자금", "monetary support": "자금 지원", "weapons deals": "무기 거래", "weapons manufacturing": "무기 제조", "weapons & tech": "무기·기술", "military support": "군사 지원", "military & monetary support": "군사·자금 지원", "strategic tech": "전략 기술", "resource extraction": "자원 채굴", "resource funding": "자원 기반 자금" },
   },
   zh: {
     tagline: "开源冲突监测", hint: "展开区域以在地图上显示其标记",
@@ -230,8 +238,9 @@ const I18N = {
     detected1: "已检测，1 个信源", detectedCorr: "已检测，已证实",
     corrExplain: "= 过去48小时内有2个以上独立信源报道", about: "关于数据",
     langCaveat: "策展的名称与描述为英文。文章以机器翻译（并不完美）打开 — 通过信源名称一键即可查看原文。",
+    moneyTrail: "资金流向与资助方",
     regions: { "Middle East": "中东", "Europe": "欧洲", "Africa": "非洲", "Asia": "亚洲", "Americas": "美洲" },
-    tags: { "monetary support": "资金支持", "weapons deals": "武器交易", "weapons manufacturing": "武器制造", "weapons & tech": "武器与技术", "military support": "军事支持", "military & monetary support": "军事与资金支持", "strategic tech": "战略技术", "resource extraction": "资源开采", "resource funding": "资源融资" },
+    tags: { "humanitarian funding": "人道主义资金", "monetary support": "资金支持", "weapons deals": "武器交易", "weapons manufacturing": "武器制造", "weapons & tech": "武器与技术", "military support": "军事支持", "military & monetary support": "军事与资金支持", "strategic tech": "战略技术", "resource extraction": "资源开采", "resource funding": "资源融资" },
   },
 };
 
@@ -422,30 +431,8 @@ function popupHtml(c) {
       </details>`
     : `<div class="empty-note">${escapeHtml(t("noReports"))}</div>`;
 
-  const entities = (c.entities || []).length
-    ? `<details class="popup-links popup-entities">
-        <summary>${escapeHtml(t("linkedEntities"))} (${c.entities.length}) ▾</summary>
-        <ul>
-          ${c.entities
-            .map(
-              (e) => `<li>
-                <div class="entity-name">
-                  ${
-                    e.website
-                      ? `<a href="${escapeHtml(e.website)}" target="_blank" rel="noopener noreferrer">${escapeHtml(e.name)} ↗</a>`
-                      : escapeHtml(e.name)
-                  }
-                  ${e.connection ? `<span class="badge connection-tag">${escapeHtml(tTag(e.connection))}</span>` : ""}
-                </div>
-                <div class="entity-role">${escapeHtml(e.role)}</div>
-                <div class="meta"><a href="${escapeHtml(e.source.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(t("sourceLabel"))} ${escapeHtml(e.source.label)}</a></div>
-              </li>`
-            )
-            .join("")}
-        </ul>
-        <div class="entity-disclaimer">${escapeHtml(t("entityDisclaimer"))}</div>
-      </details>`
-    : "";
+  const entities = actorSection(c.entities, "popup-entities", t("linkedEntities"));
+  const finance = actorSection(c.finance, "popup-finance", t("moneyTrail"));
 
   return `
     <div class="popup-title">${escapeHtml(c.name)}</div>
@@ -459,8 +446,38 @@ function popupHtml(c) {
     ${assessment}
     ${liveLinks}
     ${links}
+    ${finance}
     ${entities}
   `;
+}
+
+// Shared renderer for curated actor lists (linked entities, money trail):
+// name (linked to official site when one exists), connection tag, role text,
+// and a verification source link, with the standing disclaimer.
+function actorSection(items, cssClass, title) {
+  if (!(items || []).length) return "";
+  return `<details class="popup-links ${cssClass}">
+    <summary>${escapeHtml(title)} (${items.length}) ▾</summary>
+    <ul>
+      ${items
+        .map(
+          (e) => `<li>
+            <div class="entity-name">
+              ${
+                e.website
+                  ? `<a href="${escapeHtml(e.website)}" target="_blank" rel="noopener noreferrer">${escapeHtml(e.name)} ↗</a>`
+                  : escapeHtml(e.name)
+              }
+              ${e.connection ? `<span class="badge connection-tag">${escapeHtml(tTag(e.connection))}</span>` : ""}
+            </div>
+            <div class="entity-role">${escapeHtml(e.role)}</div>
+            <div class="meta"><a href="${escapeHtml(e.source.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(t("sourceLabel"))} ${escapeHtml(e.source.label)}</a></div>
+          </li>`
+        )
+        .join("")}
+    </ul>
+    <div class="entity-disclaimer">${escapeHtml(t("entityDisclaimer"))}</div>
+  </details>`;
 }
 
 function markerIcon(c) {

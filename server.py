@@ -312,6 +312,7 @@ def refresh():
             "lat": c["lat"],
             "lng": c["lng"],
             "entities": c.get("entities", []),
+            "finance": c.get("finance", []),
             "articles": matched,
             "recentCount": len(recent),
             "recentSources": recent_sources,

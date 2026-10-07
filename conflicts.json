@@ -60,6 +60,26 @@
         "label": "ISW daily campaign assessments",
         "url": "https://www.understandingwar.org/backgrounder/ukraine-conflict-updates"
       }
+    ],
+    "finance": [
+      {
+        "name": "Western government aid (US, EU, UK & allies)",
+        "connection": "military & monetary support",
+        "role": "Government-to-government military, financial and humanitarian aid, itemised publicly by the Kiel Institute's Ukraine Support Tracker.",
+        "source": {
+          "label": "Kiel Ukraine Support Tracker",
+          "url": "https://www.ifw-kiel.de/topics/war-against-ukraine/ukraine-support-tracker/"
+        }
+      },
+      {
+        "name": "Russian fossil-fuel export revenue",
+        "connection": "resource funding",
+        "role": "Oil, gas and coal exports remain the Russian state's main war-budget revenue; flows tracked daily by CREA.",
+        "source": {
+          "label": "CREA — financing tracker",
+          "url": "https://energyandcleanair.org/financing-putins-war/"
+        }
+      }
     ]
   },
   {
@@ -112,6 +132,36 @@
         "label": "Al Jazeera live TV",
         "url": "https://www.aljazeera.com/live"
       }
+    ],
+    "finance": [
+      {
+        "name": "US Foreign Military Financing",
+        "connection": "military & monetary support",
+        "role": "Israel receives ~$3.8bn/year in US military financing under a 10-year memorandum, plus wartime supplemental packages.",
+        "source": {
+          "label": "Congressional Research Service",
+          "url": "https://crsreports.congress.gov"
+        }
+      },
+      {
+        "name": "Iranian funding to Hamas",
+        "connection": "monetary support",
+        "role": "US Treasury designations document Iranian financial support channelled to Hamas's military wing.",
+        "source": {
+          "label": "OFAC sanctions search",
+          "url": "https://sanctionssearch.ofac.treas.gov/"
+        }
+      },
+      {
+        "name": "UNRWA & humanitarian donors",
+        "connection": "humanitarian funding",
+        "role": "Primary UN channel for aid to Palestinians; donor flows tracked openly by UN OCHA's Financial Tracking Service.",
+        "website": "https://www.unrwa.org",
+        "source": {
+          "label": "UN OCHA Financial Tracking Service",
+          "url": "https://fts.unocha.org"
+        }
+      }
     ]
   },
   {
@@ -133,6 +183,17 @@
       {
         "label": "Liveuamap Israel–Palestine (live OSINT map)",
         "url": "https://israelpalestine.liveuamap.com"
+      }
+    ],
+    "finance": [
+      {
+        "name": "Iranian funding to Hezbollah",
+        "connection": "monetary support",
+        "role": "US Treasury assesses Iran provides Hezbollah hundreds of millions of dollars annually.",
+        "source": {
+          "label": "US Treasury press releases",
+          "url": "https://home.treasury.gov/news/press-releases"
+        }
       }
     ]
   },
@@ -240,6 +301,17 @@
         "label": "Liveuamap Yemen (live OSINT map)",
         "url": "https://yemen.liveuamap.com"
       }
+    ],
+    "finance": [
+      {
+        "name": "Iranian support to the Houthis",
+        "connection": "military & monetary support",
+        "role": "Arms and funding documented in UN Panel of Experts reports and US Treasury designations.",
+        "source": {
+          "label": "UN Panel of Experts on Yemen",
+          "url": "https://www.un.org/securitycouncil/sanctions/2140/panel-of-experts"
+        }
+      }
     ]
   },
   {
@@ -285,6 +357,26 @@
         "label": "Liveuamap Sudan (live OSINT map)",
         "url": "https://sudan.liveuamap.com"
       }
+    ],
+    "finance": [
+      {
+        "name": "Gold export revenue",
+        "connection": "resource funding",
+        "role": "Both warring parties finance operations through gold exports; routes documented by The Sentry and UN experts.",
+        "source": {
+          "label": "The Sentry — conflict finance investigations",
+          "url": "https://thesentry.org"
+        }
+      },
+      {
+        "name": "External arms supplies to the RSF",
+        "connection": "military support",
+        "role": "UN experts found 'credible' allegations of arms reaching the RSF via regional supply networks.",
+        "source": {
+          "label": "UN Panel of Experts on Sudan",
+          "url": "https://www.un.org/securitycouncil/sanctions/1591"
+        }
+      }
     ]
   },
   {
@@ -323,7 +415,18 @@
       }
     ],
     "region": "Asia",
-    "status": "active"
+    "status": "active",
+    "finance": [
+      {
+        "name": "Myanma Oil & Gas Enterprise (MOGE)",
+        "connection": "resource funding",
+        "role": "State oil and gas revenue is the junta's largest foreign-currency source; MOGE is EU-sanctioned.",
+        "source": {
+          "label": "EU sanctions map",
+          "url": "https://www.sanctionsmap.eu/"
+        }
+      }
+    ]
   },
   {
     "id": "sahel",
@@ -353,7 +456,18 @@
       }
     ],
     "region": "Africa",
-    "status": "active"
+    "status": "active",
+    "finance": [
+      {
+        "name": "Mining concessions to Russian-linked firms",
+        "connection": "resource funding",
+        "role": "Payment-in-kind mining arrangements tied to Africa Corps presence, documented in sanctions listings and investigations.",
+        "source": {
+          "label": "OpenSanctions",
+          "url": "https://www.opensanctions.org"
+        }
+      }
+    ]
   },
   {
     "id": "drc",
@@ -381,7 +495,18 @@
       }
     ],
     "region": "Africa",
-    "status": "active"
+    "status": "active",
+    "finance": [
+      {
+        "name": "Conflict-mineral revenue (coltan, gold, tin)",
+        "connection": "resource funding",
+        "role": "Armed groups tax and smuggle mineral supply chains; documented by the UN Group of Experts and Global Witness.",
+        "source": {
+          "label": "Global Witness",
+          "url": "https://globalwitness.org"
+        }
+      }
+    ]
   },
   {
     "id": "haiti",
@@ -395,7 +520,18 @@
       "port-au-prince"
     ],
     "region": "Americas",
-    "status": "active"
+    "status": "active",
+    "finance": [
+      {
+        "name": "Arms trafficking from the US",
+        "connection": "weapons deals",
+        "role": "UN experts document firearms flows from US ports fuelling gang violence.",
+        "source": {
+          "label": "UN Panel of Experts on Haiti",
+          "url": "https://www.un.org/securitycouncil/sanctions/2653"
+        }
+      }
+    ]
   },
   {
     "id": "somalia",
