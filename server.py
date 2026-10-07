@@ -45,6 +45,7 @@ FEEDS = [
     ("ReliefWeb", "https://reliefweb.int/updates/rss.xml"),
     ("Dawn", "https://www.dawn.com/feeds/home"),
     ("The Diplomat", "https://thediplomat.com/feed/"),
+    ("RNZ Pacific", "https://www.rnz.co.nz/rss/pacific.xml"),
 ]
 
 CONFLICTS = json.loads((ROOT / "conflicts.json").read_text())
@@ -146,6 +147,9 @@ SECURITY_TERMS = [
     "protest", "riot", "demonstrat", "unrest", "crackdown", "curfew",
     "martial law", "uprising", "revolt", "tear gas", "water cannon",
     "civil disobedience", "hunger strike", "blockades",
+    # drug trade & organized crime
+    "drug", "narcotic", "trafficking", "smuggl", "cocaine",
+    "methamphetamine", "cartel", "organised crime", "organized crime",
 ]
 
 
@@ -153,7 +157,12 @@ def matches(article: dict, conflict: dict) -> bool:
     text = f"{article['title']} {article['description']}".lower()
     if not any(kw in text for kw in conflict["keywords"]):
         return False
-    return any(term in text for term in SECURITY_TERMS)
+    if not any(term in text for term in SECURITY_TERMS):
+        return False
+    # themed entries (e.g. the Pacific drug-transit crisis) can demand their
+    # own topic terms on top of the general security filter
+    req = conflict.get("require")
+    return not req or any(r in text for r in req)
 
 
 # ---------------------------------------------------------------------------
@@ -170,7 +179,9 @@ UNREST_TERMS = [
 
 # (name, lat, lng, extra match terms) — countries scanned for unrest clusters
 COUNTRIES = [
-    ("Kenya", -1.29, 36.82, ["kenyan"]), ("Nigeria", 9.08, 7.40, ["nigerian"]),
+    ("Kenya", -1.29, 36.82, ["kenyan"]),
+    ("Vanuatu", -17.74, 168.32, []), ("Samoa", -13.76, -171.76, ["samoan"]),
+    ("Tonga", -21.14, -175.20, ["tongan"]), ("Nigeria", 9.08, 7.40, ["nigerian"]),
     ("Ghana", 5.60, -0.19, ["ghanaian"]), ("Senegal", 14.72, -17.47, ["senegalese"]),
     ("Ivory Coast", 6.85, -5.30, ["ivorian"]), ("Cameroon", 3.87, 11.52, ["cameroonian"]),
     ("Uganda", 0.35, 32.58, ["ugandan"]), ("Tanzania", -6.80, 39.28, ["tanzanian"]),

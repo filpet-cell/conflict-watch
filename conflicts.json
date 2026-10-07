@@ -1421,5 +1421,169 @@
         }
       }
     ]
+  },
+  {
+    "id": "pacific-drugs",
+    "name": "Pacific Drug Transit Crisis",
+    "country": "Fiji / Pacific Islands",
+    "lat": -17.8,
+    "lng": 178.0,
+    "region": "Pacific",
+    "status": "unrest",
+    "keywords": [
+      "fiji",
+      "fijian",
+      "suva",
+      "tonga",
+      "pacific drug",
+      "semi-submersible",
+      "vanuatu",
+      "samoa"
+    ],
+    "assessment": {
+      "label": "UNODC — transnational organized crime",
+      "url": "https://www.unodc.org"
+    },
+    "live": [
+      {
+        "label": "RNZ Pacific coverage",
+        "url": "https://www.rnz.co.nz/international/pacific"
+      }
+    ],
+    "finance": [
+      {
+        "name": "Cartel trafficking routes to Australia & NZ",
+        "connection": "monetary support",
+        "role": "Cocaine and methamphetamine transshipment through Pacific islands — 17 tonnes seized in 2026 alone, per the Australian Federal Police.",
+        "source": {
+          "label": "Australian Federal Police",
+          "url": "https://www.afp.gov.au"
+        }
+      },
+      {
+        "name": "Billion-dollar regional drug economy",
+        "connection": "monetary support",
+        "role": "Pacific customs agencies document a billion-dollar illicit drug economy destabilising island states.",
+        "source": {
+          "label": "Oceania Customs Organisation",
+          "url": "https://www.ocosec.org"
+        }
+      }
+    ],
+    "require": [
+      "drug",
+      "narcotic",
+      "cocaine",
+      "metham",
+      "meth lab",
+      "trafficking",
+      "smuggl",
+      "cartel",
+      "seizure",
+      "gang",
+      "organised crime",
+      "organized crime",
+      "state of emergency"
+    ]
+  },
+  {
+    "id": "new-caledonia",
+    "name": "New Caledonia Tensions",
+    "country": "New Caledonia (France)",
+    "lat": -21.3,
+    "lng": 165.5,
+    "region": "Pacific",
+    "status": "unrest",
+    "keywords": [
+      "new caledonia",
+      "caledonian",
+      "kanak",
+      "noumea",
+      "nouméa",
+      "flnks"
+    ],
+    "assessment": {
+      "label": "Crisis Group CrisisWatch",
+      "url": "https://www.crisisgroup.org/crisiswatch"
+    },
+    "finance": [
+      {
+        "name": "Nickel industry crisis",
+        "connection": "resource extraction",
+        "role": "New Caledonia holds roughly a quarter of world nickel reserves; the industry's collapse and contested control underpin the political crisis.",
+        "source": {
+          "label": "Crisis Group",
+          "url": "https://www.crisisgroup.org"
+        }
+      }
+    ]
+  },
+  {
+    "id": "png-highlands",
+    "name": "Papua New Guinea Tribal Violence",
+    "country": "Papua New Guinea",
+    "lat": -5.9,
+    "lng": 144.2,
+    "region": "Pacific",
+    "status": "active",
+    "keywords": [
+      "papua new guinea",
+      "enga province",
+      "wabag",
+      "port moresby",
+      "bougainville",
+      "kiriwina",
+      "highlands violence"
+    ],
+    "assessment": {
+      "label": "ACLED conflict & protest data",
+      "url": "https://acleddata.com"
+    },
+    "live": [
+      {
+        "label": "RNZ Pacific coverage",
+        "url": "https://www.rnz.co.nz/international/pacific"
+      }
+    ],
+    "finance": [
+      {
+        "name": "Illicit firearms & conflict economies",
+        "connection": "weapons deals",
+        "role": "Smuggled and craft-made firearms escalate highlands tribal conflicts; flows documented by GI-TOC.",
+        "source": {
+          "label": "GI-TOC — organized crime observatory",
+          "url": "https://globalinitiative.net"
+        }
+      }
+    ]
+  },
+  {
+    "id": "solomon-islands",
+    "name": "Solomon Islands Tensions",
+    "country": "Solomon Islands",
+    "lat": -9.43,
+    "lng": 160.0,
+    "region": "Pacific",
+    "status": "potential",
+    "keywords": [
+      "solomon islands",
+      "honiara",
+      "guadalcanal"
+    ],
+    "assessment": {
+      "label": "Lowy Institute — Pacific",
+      "url": "https://www.lowyinstitute.org"
+    },
+    "finance": [
+      {
+        "name": "Chinese security & infrastructure financing",
+        "connection": "military & monetary support",
+        "role": "The 2022 security pact and state-backed lending reshape local politics; flows mapped by the Lowy Institute Pacific Aid Map.",
+        "source": {
+          "label": "Lowy Institute Pacific Aid Map",
+          "url": "https://pacificaidmap.lowyinstitute.org"
+        }
+      }
+    ]
   }
 ]
